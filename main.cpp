@@ -21,7 +21,6 @@ public:
     {
         file.close();
     }
-    std::ostream& getFile() {return file;}
     std::ofstream& operator<<(const std::string message){
         file<<message;
         return file;
